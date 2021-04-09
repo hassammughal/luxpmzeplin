@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="@dimen/_36ssp"
+    tools:context=".MainActivity"
+    android:background="@color/white"
+    android:gravity="center">
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:orientation="vertical" >
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_marginHorizontal="@dimen/_30ssp"
+            android:layout_height="@dimen/_30ssp"
+            android:layout_gravity="center_horizontal"
+            android:src="@drawable/alpha" />
+
+        <ImageView
+            android:layout_marginTop="@dimen/_50ssp"
+            android:layout_width="@dimen/_100ssp"
+            android:layout_height="@dimen/_80ssp"
+            android:layout_gravity="center_horizontal"
+            android:src="@drawable/alpha2"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:padding="@dimen/_15ssp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/_49ssp"
+            android:fontFamily="@font/lato_bold"
+            android:textColor="#707070"
+            android:textAlignment="center"
+            android:textSize="@dimen/_23ssp"
+            android:text="Stay on the top\nof your finance" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_43ssp"
+            android:fontFamily="@font/merriweather"
+            android:gravity="center_horizontal"
+            android:lineHeight="@dimen/_18ssp"
+            android:lineSpacingExtra="4sp"
+            android:lines="2"
+            android:maxLines="2"
+            android:text="Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam\n nonumy eirmod"
+            android:textAlignment="center"
+            android:textColor="#b7b7b7"
+            android:textSize="@dimen/_14ssp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:layout_width="287dp"
+            android:layout_height="53dp"
+            android:id="@+id/signup"
+            android:layout_marginTop="@dimen/_100ssp"
+            android:background="@drawable/round_rect_shape"
+            android:fontFamily="@font/lato"
+            android:gravity="center_vertical|center_horizontal"
+            android:lineSpacingExtra="3sp"
+            android:text="가입하기"
+            android:textAlignment="center"
+            android:textColor="@color/white"
+            android:textSize="16sp"
+            android:textStyle="normal" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/_17ssp"
+            android:fontFamily="@font/lato"
+            android:lineHeight="@dimen/_19ssp"
+            android:lineSpacingExtra="3sp"
+            android:text="로그인"
+            android:id="@+id/login"
+            android:textColor="#3b286d"
+            android:textSize="16sp"
+            android:textStyle="normal" />
+
+    </LinearLayout>
+
+
+</RelativeLayout>

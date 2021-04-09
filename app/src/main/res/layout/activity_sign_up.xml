@@ -1,0 +1,183 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:padding="@dimen/_20ssp"
+    tools:context=".SignUp">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/_30ssp"
+        android:orientation="vertical"
+        android:gravity="center"
+        android:id="@+id/heading">
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_marginHorizontal="@dimen/_30ssp"
+            android:layout_height="@dimen/_30ssp"
+            android:layout_gravity="center_horizontal"
+            android:src="@drawable/alpha" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/_20ssp"
+            android:fontFamily="@font/lato"
+            android:textStyle="bold"
+            android:textSize="23sp"
+            android:textColor="#0a0a0a"
+            android:lineSpacingExtra="5sp"
+            android:gravity="center_horizontal"
+            tools:text="회원가입"
+            />
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:layout_below="@+id/heading"
+        android:layout_marginTop="@dimen/_30ssp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/lato"
+            android:textStyle="bold"
+            android:textSize="16sp"
+            android:padding="@dimen/_5ssp"
+            android:textColor="#707070"
+            android:lineSpacingExtra="3sp"
+            android:gravity="center_horizontal"
+            tools:text="이름"
+            />
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="이채민"
+            android:id="@+id/et_name"
+            android:paddingBottom="@dimen/_15ssp"
+            android:fontFamily="@font/merriweather"
+            />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/lato"
+            android:textStyle="bold"
+            android:textSize="16sp"
+            android:layout_marginTop="@dimen/_20ssp"
+            android:textColor="#707070"
+            android:lineSpacingExtra="3sp"
+            android:gravity="center_horizontal"
+            tools:text="휴대폰 번호"
+            />
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="+82 111 1111111"
+            android:id="@+id/et_phone"
+            android:paddingBottom="@dimen/_15ssp"
+            android:fontFamily="@font/merriweather"
+            />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/lato"
+            android:layout_marginTop="@dimen/_20ssp"
+            android:textStyle="bold"
+            android:textSize="16sp"
+            android:textColor="#707070"
+            android:lineSpacingExtra="3sp"
+            android:gravity="center_horizontal"
+            tools:text="생년월일"
+            />
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="mm - dd-yyyy"
+            android:id="@+id/et_dob"
+            android:paddingBottom="@dimen/_15ssp"
+            android:fontFamily="@font/merriweather"
+            />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/lato"
+            android:textStyle="bold"
+            android:layout_marginTop="@dimen/_20ssp"
+            android:textSize="16sp"
+            android:textColor="#707070"
+            android:lineSpacingExtra="3sp"
+            android:gravity="center_horizontal"
+            tools:text=" Email"
+            />
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="john.doe@alphametics.com"
+            android:id="@+id/et_email"
+            android:paddingBottom="@dimen/_15ssp"
+            android:fontFamily="@font/merriweather"
+            />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/lato"
+            android:textStyle="bold"
+            android:layout_marginTop="@dimen/_20ssp"
+            android:textSize="16sp"
+            android:textColor="#707070"
+            android:lineSpacingExtra="3sp"
+            android:gravity="center_horizontal"
+            tools:text="비밀번호"
+            />
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="• • • • • • • • • •"
+            android:id="@+id/et_password"
+            android:paddingBottom="@dimen/_15ssp"
+            android:fontFamily="@font/merriweather"
+            />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/lato"
+            android:textStyle="bold"
+            android:textSize="16sp"
+            android:layout_marginTop="@dimen/_20ssp"
+            android:textColor="#707070"
+            android:lineSpacingExtra="3sp"
+            android:gravity="center_horizontal"
+            tools:text="비밀번호 확인"
+            />
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="• • • • • • • • • •"
+            android:id="@+id/et_cpassword"
+            android:paddingBottom="@dimen/_15ssp"
+            android:fontFamily="@font/merriweather"
+            />
+
+
+    </LinearLayout>
+
+
+
+
+</RelativeLayout>
