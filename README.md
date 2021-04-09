@@ -1,2 +1,2 @@
 # luxpmzeplin
-A simple front-end developed based on screens designed in Zeplin
+A simple front-end project based on screens designed in Zeplin
