@@ -1,89 +1,118 @@
 <?xml version="1.0" encoding="utf-8"?>
-<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
-    android:layout_width="match_parent"
-    android:layout_height="match_parent"
-    android:padding="@dimen/_36ssp"
-    tools:context=".MainActivity"
     android:background="@color/white"
-    android:gravity="center">
+    android:layout_width="414dp"
+    android:layout_height="match_parent">
 
-    <LinearLayout
+    <ImageView
+        android:id="@+id/imageView3"
+        android:layout_width="@dimen/_100ssp"
+        android:layout_height="@dimen/_30ssp"
+        android:layout_marginStart="155dp"
+        android:layout_marginTop="99dp"
+        android:layout_marginEnd="155dp"
+        android:layout_marginBottom="50dp"
+        app:layout_constraintBottom_toTopOf="@+id/imageView4"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/alpha" />
+
+    <ImageView
+        android:id="@+id/imageView4"
+        android:layout_width="@dimen/_100ssp"
+        android:layout_height="@dimen/_61ssp"
+
+        android:layout_marginStart="183dp"
+        android:layout_marginTop="50dp"
+        android:layout_marginEnd="182dp"
+        android:layout_marginBottom="42dp"
+        app:layout_constraintBottom_toTopOf="@+id/textView2"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageView3"
+        app:srcCompat="@drawable/alpha2" />
+
+    <TextView
+        android:id="@+id/textView2"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:gravity="center"
-        android:orientation="vertical" >
+        android:layout_marginStart="180dp"
+        android:layout_marginTop="42dp"
+        android:layout_marginEnd="177dp"
+        android:layout_marginBottom="20dp"
+        android:fontFamily="@font/lato_bold"
+        android:lineHeight="@dimen/_28ssp"
+        android:text="Stay on the top\nof your finance"
+        android:textAlignment="center"
+        android:textColor="#707070"
+        android:textSize="@dimen/_23ssp"
+        app:layout_constraintBottom_toTopOf="@+id/textView3"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageView4" />
 
-        <ImageView
-            android:layout_width="match_parent"
-            android:layout_marginHorizontal="@dimen/_30ssp"
-            android:layout_height="@dimen/_30ssp"
-            android:layout_gravity="center_horizontal"
-            android:src="@drawable/alpha" />
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="65dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="64dp"
+        android:layout_marginBottom="57dp"
+        android:fontFamily="@font/merriweather"
+        android:lineHeight="@dimen/_18ssp"
+        android:lines="2"
+        android:maxLines="2"
+        android:text="Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod"
+        android:textAlignment="center"
+        android:textColor="#b7b7b7"
+        android:textSize="@dimen/_14ssp"
+        app:layout_constraintBottom_toTopOf="@+id/button"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView2" />
 
-        <ImageView
-            android:layout_marginTop="@dimen/_50ssp"
-            android:layout_width="@dimen/_100ssp"
-            android:layout_height="@dimen/_80ssp"
-            android:layout_gravity="center_horizontal"
-            android:src="@drawable/alpha2"/>
+    <Button
+        android:id="@+id/button"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="64dp"
+        android:layout_marginTop="57dp"
+        android:layout_marginEnd="63dp"
+        android:layout_marginBottom="10dp"
+        android:background="@drawable/round_rect_shape"
+        android:gravity="center_vertical|center_horizontal"
+        android:lineSpacingExtra="3sp"
+        android:text="가입하기"
+        android:textColor="@color/white"
+        android:textSize="16sp"
+        android:textStyle="normal"
+        app:layout_constraintBottom_toTopOf="@+id/button2"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView3" />
 
-        <TextView
-            android:layout_width="match_parent"
-            android:padding="@dimen/_15ssp"
-            android:layout_height="wrap_content"
-            android:layout_marginTop="@dimen/_49ssp"
-            android:fontFamily="@font/lato_bold"
-            android:textColor="#707070"
-            android:textAlignment="center"
-            android:textSize="@dimen/_23ssp"
-            android:text="Stay on the top\nof your finance" />
-
-        <TextView
-            android:layout_width="match_parent"
-            android:layout_height="@dimen/_43ssp"
-            android:fontFamily="@font/merriweather"
-            android:gravity="center_horizontal"
-            android:lineHeight="@dimen/_18ssp"
-            android:lineSpacingExtra="4sp"
-            android:lines="2"
-            android:maxLines="2"
-            android:text="Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam\n nonumy eirmod"
-            android:textAlignment="center"
-            android:textColor="#b7b7b7"
-            android:textSize="@dimen/_14ssp"
-            android:textStyle="bold" />
-
-        <TextView
-            android:layout_width="287dp"
-            android:layout_height="53dp"
-            android:id="@+id/signup"
-            android:layout_marginTop="@dimen/_100ssp"
-            android:background="@drawable/round_rect_shape"
-            android:fontFamily="@font/lato"
-            android:gravity="center_vertical|center_horizontal"
-            android:lineSpacingExtra="3sp"
-            android:text="가입하기"
-            android:textAlignment="center"
-            android:textColor="@color/white"
-            android:textSize="16sp"
-            android:textStyle="normal" />
-
-        <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginTop="@dimen/_17ssp"
-            android:fontFamily="@font/lato"
-            android:lineHeight="@dimen/_19ssp"
-            android:lineSpacingExtra="3sp"
-            android:text="로그인"
-            android:id="@+id/login"
-            android:textColor="#3b286d"
-            android:textSize="16sp"
-            android:textStyle="normal" />
-
-    </LinearLayout>
-
-
-</RelativeLayout>
+    <Button
+        android:id="@+id/button2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="185dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="181dp"
+        android:layout_marginBottom="78dp"
+        android:background="#00FFFFFF"
+        android:backgroundTint="@color/white"
+        android:fontFamily="@font/lato"
+        android:lineSpacingExtra="3sp"
+        android:text="로그인"
+        android:textColor="#3b286d"
+        android:textSize="16sp"
+        android:textStyle="normal"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/button" />
+</androidx.constraintlayout.widget.ConstraintLayout>
